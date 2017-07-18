@@ -28,6 +28,8 @@ public class Taschenrechner {
 			break;
 		case "*":
 			System.out.println("Multi");
+			Taschenrechner taschenrechner=new Taschenrechner();
+			System.out.printf("Ausgabe: %d \n", taschenrechner.multiplizieren(op1, op2));
 			break;
 
 		default:
