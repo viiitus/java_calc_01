@@ -17,18 +17,19 @@ public class Taschenrechner {
 		int op2 = scanner.nextInt();
 		System.out.println(op2);
 
+		Taschenrechner taschenrechner = new Taschenrechner();
+
 		switch (operator) {
 		case "+":
 			System.out.println("Add");
-			System.out.printf("Ausgabe: %d \n", Taschenrechner.addieren(op1, op2));
+			System.out.printf("Ausgabe: %d \n", taschenrechner.addieren(op1, op2));
 			break;
 		case "-":
 			System.out.println("Sub");
-			System.out.printf("Ausgabe: %d \n", Taschenrechner.substrahieren(op1, op2));
+			System.out.printf("Ausgabe: %d \n", taschenrechner.substrahieren(op1, op2));
 			break;
 		case "*":
 			System.out.println("Multi");
-			Taschenrechner taschenrechner=new Taschenrechner();
 			System.out.printf("Ausgabe: %d \n", taschenrechner.multiplizieren(op1, op2));
 			break;
 
@@ -39,7 +40,7 @@ public class Taschenrechner {
 
 	}
 
-	public static int addieren(int a, int b) {
+	public int addieren(int a, int b) {
 		int ergebnis = a + b;
 		return ergebnis;
 	}
@@ -52,7 +53,7 @@ public class Taschenrechner {
 		return ergebnis;
 	}
 
-	public static int substrahieren(int a, int b) {
+	public  int substrahieren(int a, int b) {
 		int ergebnis = a - b;
 		return ergebnis;
 	}
