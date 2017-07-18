@@ -53,7 +53,7 @@ public class Taschenrechner {
 		return ergebnis;
 	}
 
-	public  int substrahieren(int a, int b) {
+	public int substrahieren(int a, int b) {
 		int ergebnis = a - b;
 		return ergebnis;
 	}
