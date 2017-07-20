@@ -24,22 +24,22 @@ public class Taschenrechner {
 		switch (operator) {
 		case "+":
 			System.out.println("|            Addition               |");
-			System.out.printf("| Ergebnis: %d                       | \n", taschenrechner.addieren(op1, op2));
+			System.out.printf("| Ergebnis: %4d                    | \n", taschenrechner.addieren(op1, op2));
 			System.out.println("+-----------------------------------+");
 			break;
 		case "-":
 			System.out.println("|           Subtraktion             |");
-			System.out.printf("| Ergebnis: %d                       | \n", taschenrechner.substrahieren(op1, op2));
+			System.out.printf("| Ergebnis: %4d                       | \n", taschenrechner.substrahieren(op1, op2));
 			System.out.println("+-----------------------------------+");
 			break;
 		case "*":
 			System.out.println("|         Multiplikation            |");
-			System.out.printf("| Ergebnis: %d                       |\n", taschenrechner.multiplizieren(op1, op2));
+			System.out.printf("| Ergebnis: %4d                       |\n", taschenrechner.multiplizieren(op1, op2));
 			System.out.println("+-----------------------------------+");
 			break;
 		case "/":
 			System.out.println("|            Division               |");
-			System.out.printf("| Ergebnis: %d                       |\n", taschenrechner.dividieren(op1, op2));
+			System.out.printf("| Ergebnis: %4d                       |\n", taschenrechner.dividieren(op1, op2));
 			System.out.println("+-----------------------------------+");
 			break;
 
