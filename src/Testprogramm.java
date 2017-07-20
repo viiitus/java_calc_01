@@ -8,9 +8,9 @@ public class Testprogramm {
 		
 		
 		Scanner scanner = new Scanner(System.in);
-		System.out.println(formatter.getPaddedString('-'));
+		System.out.println(formatter.getNicePaddedString('-', '+'));
 		System.out.println("|           Taschenrechner          |");
-		System.out.println(formatter.getPaddedString('-'));
+		System.out.println(formatter.getNicePaddedString('-', '+'));
 		System.out.print("| Bitte geben Sie den Operator ein: ");
 		String operator = scanner.nextLine();
 		System.out.println(formatter.getPaddedString('-'));
