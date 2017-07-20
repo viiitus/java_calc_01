@@ -6,21 +6,24 @@ public class VitusStringFormatter {
 		this.length = length;
 	}
 
-	public String getPaddedString(final char padchar) {
-		StringBuilder result = new StringBuilder(this.length);
-		for (int i = 0; i < this.length; i++) {
+	private String getPaddedString(final char padchar, final int length) {
+		StringBuilder result = new StringBuilder(length);
+		for (int i = 0; i < length; i++) {
 			result.append(padchar);
 		}
 		return result.toString();
+	}
+
+	// Kopierte Methode
+	public String getPaddedString(final char padchar) {
+		return getPaddedString(padchar, this.length);
 	}
 
 	public String getNicePaddedString(final char padchar, final char delimiter) {
 		StringBuilder result = new StringBuilder(this.length);
 		result.append(delimiter);
 
-		for (int i = 0; i < this.length - 2; i++) {
-			result.append(padchar);
-		}
+		result.append(getPaddedString(padchar, this.length - 2));
 		result.append(delimiter);
 		return result.toString();
 	}
