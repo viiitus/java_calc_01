@@ -4,20 +4,23 @@ public class Testprogramm {
 
 	public static void main(String[] args) {
 
+		VitusStringFormatter formatter = new VitusStringFormatter(37);
+		
+		
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("+-----------------------------------+");
+		System.out.println(formatter.getPaddedString('-'));
 		System.out.println("|           Taschenrechner          |");
-		System.out.println("+-----------------------------------+");
+		System.out.println(formatter.getPaddedString('-'));
 		System.out.print("| Bitte geben Sie den Operator ein: ");
 		String operator = scanner.nextLine();
-		System.out.println("+-----------------------------------+");
+		System.out.println(formatter.getPaddedString('-'));
 		System.out.print("| Bitte eine Zahl eingeben:         ");
 		int op1 = scanner.nextInt();
-		System.out.println("+-----------------------------------+");
+		System.out.println(formatter.getPaddedString('-'));
 
 		System.out.print("| Bitte zweite Zahl eingeben:       ");
 		int op2 = scanner.nextInt();
-		System.out.println("+-----------------------------------+");
+		System.out.println(formatter.getPaddedString('-'));
 
 		Taschenrechner taschenrechner = new Taschenrechner();
 
