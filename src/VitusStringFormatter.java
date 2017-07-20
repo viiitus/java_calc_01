@@ -7,10 +7,10 @@ public class VitusStringFormatter {
 	}
 
 	public String getPaddedString(final char padchar) {
-		String result = "";
+		StringBuilder result = new StringBuilder(this.length);
 		for (int i = 0; i < this.length; i++) {
-			result = result + padchar;
+			result.append(padchar);
 		}
-		return result;
+		return result.toString();
 	}
 }
