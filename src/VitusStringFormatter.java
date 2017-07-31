@@ -10,7 +10,7 @@ public class VitusStringFormatter {
 	 * Method returns a String consisting of length number of padchar characters.
 	 * 
 	 * @param padchar
-	 *            a character to be used for constructing the String
+	 *            a character to be used for constructing the String.
 	 * @param length
 	 *            a integer value greater than zero defining the length of the
 	 *            String to be built.
