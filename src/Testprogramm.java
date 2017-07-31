@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Testprogramm {
 
-	private static final String ANSWER_NO = "n";
+	private static final String ANSWER_NO = "süSi";
 
 	public static void main(String[] args) {
 
@@ -61,11 +61,16 @@ public class Testprogramm {
 			decision = scanner.next();
 			System.out.println();
 
-			if (ANSWER_NO.equalsIgnoreCase(decision)) {
-				exitProgram = true;
-			} else {
-				exitProgram = false;
-			}
+			
+			exitProgram = (ANSWER_NO.equalsIgnoreCase(decision));
+			
+//			Alternativ: 
+
+//			if (ANSWER_NO.equalsIgnoreCase(decision)) {
+//				exitProgram = true;
+//			} else {
+//				exitProgram = false;
+//			}
 			
 			System.out.println(formatter.getPaddedString(' '));
 		} while (!exitProgram);
