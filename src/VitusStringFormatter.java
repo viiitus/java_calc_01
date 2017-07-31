@@ -6,6 +6,16 @@ public class VitusStringFormatter {
 		this.length = length;
 	}
 
+	/**
+	 * Method returns a String consisting of length number of padchar characters.
+	 * 
+	 * @param padchar
+	 *            a character to be used for constructing the String
+	 * @param length
+	 *            a integer value greater than zero defining the length of the
+	 *            String to be built.
+	 * @return a String with the given length, consisting of padchar characters.
+	 */
 	private String getPaddedString(final char padchar, final int length) {
 		StringBuilder result = new StringBuilder(length);
 		for (int i = 0; i < length; i++) {
