@@ -13,8 +13,7 @@ public class Testprogramm {
 		boolean exitProgram;
 		String operator;
 		String decision;
-		
-	
+
 		do {
 			System.out.println(formatter.getNicePaddedString('-', '+'));
 			System.out.println("|           Taschenrechner          |");
@@ -61,14 +60,16 @@ public class Testprogramm {
 			System.out.println("| Weitere Berechnug durchführen? (y/n)");
 			decision = scanner.next();
 			System.out.println();
-				
+
 			if (ANSWER_NO.equalsIgnoreCase(decision)) {
 				exitProgram = true;
 			} else {
 				exitProgram = false;
 			}
+			
 			System.out.println(formatter.getPaddedString(' '));
 		} while (!exitProgram);
+		System.out.println("Programm wurde beendet.");
 
 	}
 }
