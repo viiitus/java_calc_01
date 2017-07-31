@@ -1,5 +1,10 @@
+/**
+ * VitusStringFormatter is a great class for formating Strings.
+ * 
+ * @author q365856
+ *
+ */
 public class VitusStringFormatter {
-
 	private final int length;
 
 	public VitusStringFormatter(final int length) {
@@ -25,6 +30,15 @@ public class VitusStringFormatter {
 	}
 
 	// Kopierte Methode
+	/**
+	 * Method returns a String consisting of length number of padchar characters.
+	 * 
+	 * @param padchar
+	 *            a character to be used for constructing the String.
+	 *
+	 * @return a String with the length of this {@link VitusStringFormatter}
+	 *         consisting of padchar characters.
+	 */
 	public String getPaddedString(final char padchar) {
 		return getPaddedString(padchar, this.length);
 	}
